@@ -9,10 +9,15 @@
         $date_posted = date("Y:m:d H:i:s");
 
         if(empty($title)){
-            $errors['title'] = "Enter a title!";
+            $errors['title'] = " Enter a title! ";
         }
         if(empty($content)){
-            $errors['content'] = "Enter content!";
+            $errors['content'] = " Enter content! ";
+        }
+        if(count($errors) > 0){
+            foreach($errors as $error){
+                echo "<span style='color: white'>" . $error . "</span>";
+            }
         }
 
         $targetDir = "images/";
@@ -27,7 +32,7 @@
             echo "Image uploaded successfully!";
             header("location: index.php");
         } else {
-            echo "Error uploading image.";
+            echo "<span style='color: white'>Error uploading image.</span>";
         }
     }
 ?>
