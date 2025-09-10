@@ -59,8 +59,8 @@ body{
     padding: 10px;
 }
 .picture{
-    width: 450px;
-    height: 200px;
+    max-width: 450px;
+    max-height: 200px;
     display: block;
     margin: 0 auto 0 auto;
     border-radius: 10px;
@@ -76,14 +76,7 @@ figcaption{
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    width: fit-content;
-}
-
-.third-post{
-    border: 2px solid lightgray;
-    border-radius: 10px;
-    padding: 10px;
-    grid-row-start: 5;
+    width: 500px;
 }
 
 .news-block{
@@ -131,6 +124,10 @@ a:hover{
     .news-block{
         top: 110px;
     }
+
+    .post{
+        width: 350px;
+    }
 }
 
 @media screen and (max-width: 799px){
@@ -146,6 +143,11 @@ a:hover{
 
     .news-block{
         top: 110px;
+    }
+
+    .post{
+        width: 160px;
+        margin: 0 auto 0 auto;
     }
 }
 
