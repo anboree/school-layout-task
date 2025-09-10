@@ -42,9 +42,7 @@ CREATE TABLE `posts` (
 INSERT INTO `posts` (`id`, `img`, `title`, `content`, `date_posted`) VALUES
 (1, 'images/programming-img-001.jpg', 'CSS Flex Izkārtojums', 'CSS Flexbox tika pielietots navigācijas joslai.', '2025-09-10 08:23:03'),
 (2, 'images/programming-img-002.jpg', 'CSS Grid', 'Ir izveidots līdzīgs mājaslapas izkārtojums izmantojot CSS Grid un Flexbox.', '2025-09-10 08:36:28'),
-(3, 'images/programming-img-003.jpg', 'CSS Sticky', 'CSS Position Sticky tika pievienots jaunumu blokam!', '2025-09-10 08:45:37'),
-(4, 'images/programming-img-001.jpg', 'test', 'testing', '2025-09-10 09:25:58'),
-(7, 'images/programming-img-003.jpg', 'test', 'test', '2025-09-10 09:40:17');
+(3, 'images/programming-img-003.jpg', 'CSS Sticky', 'CSS Position Sticky tika pievienots jaunumu blokam!', '2025-09-10 08:45:37');
 
 --
 -- Indexes for dumped tables
